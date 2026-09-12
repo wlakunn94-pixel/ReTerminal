@@ -16,6 +16,7 @@ import androidx.compose.material.icons.filled.KeyboardArrowUp
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material.icons.outlined.Settings
+import androidx.compose.material.icons.outlined.Usb
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -102,6 +103,16 @@ fun TerminalDrawer(
                         keyboardController?.hide()
                     }) {
                         Icon(imageVector = Icons.Outlined.Settings, contentDescription = null)
+                    }
+
+                    IconButton(onClick = {
+                        navController.navigate(MainActivityRoutes.UsbTools.route)
+                        keyboardController?.hide()
+                    }) {
+                        Icon(
+                            imageVector = Icons.Outlined.Usb,
+                            contentDescription = stringResource(strings.usb_tools)
+                        )
                     }
 
                     // Add Session button

@@ -89,4 +89,12 @@
     <string name="move_down">Move Down</string>
     <string name="name_already_exists">A session with this name already exists</string>
     <string name="name_cannot_be_empty">Name cannot be empty</string>
+    <string name="usb_tools">USB ADB / Fastboot</string>
+    <string name="usb_tools_desc">Connect another Android device with a USB-C OTG cable. Enable USB debugging for ADB.</string>
+    <string name="usb_scan">Scan USB devices</string>
+    <string name="usb_adb">ADB device detected</string>
+    <string name="usb_fastboot">Fastboot device detected; tap to query product</string>
+    <string name="usb_adb_detected">ADB device detected. Authorize this host on the target device.</string>
+    <string name="usb_permission_granted">USB permission granted</string>
+    <string name="usb_permission_denied">USB permission denied</string>
 </resources>

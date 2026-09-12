@@ -20,6 +20,7 @@ import com.rk.terminal.ui.screens.downloader.SetupScreen
 import com.rk.terminal.ui.screens.settings.Settings
 import com.rk.terminal.ui.screens.terminal.Rootfs
 import com.rk.terminal.ui.screens.terminal.TerminalScreen
+import com.rk.terminal.ui.screens.usb.UsbToolsScreen
 
 @Composable
 fun MainActivityNavHost(
@@ -62,6 +63,11 @@ fun MainActivityNavHost(
         composable(MainActivityRoutes.Customization.route) {
             UpdateStatusBar(mainActivity.window, true)
             Customization(mainActivity = mainActivity, navController = navController)
+        }
+
+        composable(MainActivityRoutes.UsbTools.route) {
+            UpdateStatusBar(mainActivity.window, true)
+            UsbToolsScreen(navController = navController)
         }
     }
 }
